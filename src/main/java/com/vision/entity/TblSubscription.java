@@ -32,12 +32,12 @@ public class TblSubscription {
 	private String operatorId;
 	private String price;
 	private String pack;
-	private String type;
 	private String mAct;
 	private LocalDateTime processDatetime;
 	private String serviceName;
 	private String status;
 	private String password;
 	private String requestId;
+	private String notify_status;
 
 }
