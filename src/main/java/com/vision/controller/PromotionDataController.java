@@ -10,7 +10,9 @@ import com.vision.service.PromotionDataSendService;
 public class PromotionDataController {
 	@Autowired
 	private PromotionDataSendService service;
-	@Scheduled(fixedDelay = 2000L)
+	
+	//Sending to chandra
+	//@Scheduled(fixedDelay = 2000L)
 	public void processPromotionData()
 	{
 		service.sendPromotionData();
