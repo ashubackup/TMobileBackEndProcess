@@ -39,5 +39,6 @@ public class TblSubscription {
 	private String password;
 	private String requestId;
 	private String notify_status;
+	private String transaction_Id;
 
 }

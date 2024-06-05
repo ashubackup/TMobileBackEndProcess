@@ -24,7 +24,7 @@ public interface TblSubscriptionRepo extends JpaRepository<TblSubscription, Inte
 	Integer checkTrialDate(@Param("ani") String ani);
 	
 	
-	@Query(value="SELECT * FROM tbl_subscription WHERE EXISTS (SELECT evinaRequestId FROM web_info WHERE tbl_subscription.requestId = web_info.evinaRequestId) AND notify_status='0'",nativeQuery = true)
+	@Query(value="SELECT * FROM tbl_subscription WHERE EXISTS (SELECT evinaRequestId FROM web_info WHERE tbl_subscription.transaction_Id = web_info.evinaRequestId) AND notify_status='0'",nativeQuery = true)
 	List<TblSubscription> getPromotionData();
 	
 	
