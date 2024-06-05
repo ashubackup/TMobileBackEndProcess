@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.vision.service.PromotionDataSendService;
 
-@RestController
+//@RestController
 public class PromotionDataController {
 	@Autowired
 	private PromotionDataSendService service;
